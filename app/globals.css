@@ -18,6 +18,7 @@
 html {
   background: #0a0908;
   color-scheme: dark;
+  overflow-x: clip;
 }
 
 body {

@@ -102,14 +102,14 @@ export default function DayStory() {
   }, []);
 
   return (
-    <section id="day" ref={root} className="relative flex min-h-svh items-center overflow-hidden py-20">
+    <section id="day" ref={root} className="relative flex min-h-svh items-center-safe overflow-hidden pb-4 pt-[4.5rem] sm:py-20">
       <div className="day-glow pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(255,178,36,0.13),transparent_60%)]" aria-hidden />
       <div className="day-sweep pointer-events-none absolute inset-y-0 left-0 z-20 w-full bg-[linear-gradient(90deg,transparent_0%,rgba(255,178,36,0.0)_35%,rgba(255,178,36,0.35)_50%,rgba(255,178,36,0.0)_65%,transparent_100%)] motion-reduce:hidden" aria-hidden />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-6 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+      <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-4 px-5 sm:gap-6 sm:px-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
         {/* Left: titles, clock, counter */}
         <div>
-          <div className="relative min-h-[7.5rem] sm:min-h-[11rem] lg:min-h-[15rem]">
+          <div className="relative min-h-[4rem] sm:min-h-[11rem] lg:min-h-[15rem]">
             <div className="title-without invisible absolute inset-0 motion-reduce:hidden">
               <p className="eyebrow !text-miss">One ordinary day</p>
               <h2 className="mt-3 text-3xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
@@ -130,16 +130,16 @@ export default function DayStory() {
             </div>
           </div>
 
-          <div className="mt-4 flex items-end gap-8 sm:mt-8 sm:gap-12">
-            <div>
+          <div className="mt-2 flex items-end gap-5 whitespace-nowrap sm:mt-8 sm:gap-12">
+            <div className="flex items-baseline gap-2 sm:block">
               <p className="eyebrow !text-muted">Time</p>
-              <span ref={clock} className="mt-1 block font-mono text-2xl tabular-nums sm:text-4xl">
+              <span ref={clock} className="block font-mono text-base tabular-nums sm:mt-1 sm:text-4xl">
                 9:47 PM
               </span>
             </div>
-            <div>
-              <p className="eyebrow !text-muted">Customers lost</p>
-              <span ref={lost} className="mt-1 block font-mono text-2xl tabular-nums text-amber sm:text-4xl">
+            <div className="flex items-baseline gap-2 sm:block">
+              <p className="eyebrow !text-muted"><span className="hidden min-[380px]:inline">Customers </span>lost</p>
+              <span ref={lost} className="block font-mono text-base tabular-nums text-amber sm:mt-1 sm:text-4xl">
                 0
               </span>
             </div>
@@ -147,22 +147,23 @@ export default function DayStory() {
         </div>
 
         {/* Right: the day's questions */}
-        <ol className="space-y-2 sm:space-y-3">
+        <ol className="min-w-0 space-y-1.5 sm:space-y-3">
           {events.map((e, i) => (
             <li
               key={i}
-              className={`day-card day-card-${i} card flex items-center gap-3 px-4 py-2.5 sm:gap-4 sm:px-5 sm:py-4`}
+              className={`day-card day-card-${i} card flex items-center gap-3 px-4 py-1.5 sm:gap-4 sm:px-5 sm:py-4`}
             >
               <span className="day-dot h-2 w-2 shrink-0 rounded-full bg-amber" />
-              <span className="w-[4.6rem] shrink-0 font-mono text-[0.7rem] text-muted sm:w-20 sm:text-xs">
+              <span className="hidden w-20 shrink-0 font-mono text-xs text-muted sm:block">
                 {e.time}
               </span>
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-sm sm:text-base">
-                  <span className="mr-2 font-mono text-[0.65rem] uppercase tracking-widest text-muted">{e.channel}</span>
+                  <span className="mr-2 hidden font-mono text-[0.65rem] uppercase tracking-widest text-muted sm:inline">{e.channel}</span>
                   {e.quote}
                 </span>
-                <span className="relative mt-0.5 block h-5 text-xs sm:text-sm">
+                <span className="relative mt-0.5 block h-5 pr-16 text-xs sm:pr-0 sm:text-sm">
+                  <span className="absolute right-0 top-0 font-mono text-[0.65rem] leading-5 text-muted sm:hidden">{e.time}</span>
                   <span className={`st-without invisible absolute inset-0 truncate motion-reduce:hidden ${e.lost ? "text-miss" : "text-muted"}`}>
                     {e.lost ? "✕ " : "△ "}
                     {e.without}

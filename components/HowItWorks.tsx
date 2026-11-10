@@ -138,7 +138,7 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <section id="how" ref={root} className="relative py-24 sm:py-32">
+    <section id="how" ref={root} className="relative overflow-x-clip py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <p className="eyebrow" data-reveal>How it works</p>
         <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl" data-reveal>
