@@ -7,6 +7,12 @@ import { gsap, ScrollTrigger, prefersReducedMotion } from "@/lib/motion";
 /** Smooth scrolling plus the generic [data-reveal] fade-ups. Render this last on the page. */
 export default function SmoothScroll() {
   useEffect(() => {
+    // Always open at the top. The browser's saved scroll position is wrong here
+    // because the pinned scenes change the page height after load.
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    ScrollTrigger.clearScrollMemory("manual");
+    if (!window.location.hash) window.scrollTo(0, 0);
+
     if (prefersReducedMotion()) return;
 
     const lenis = new Lenis({ lerp: 0.11, anchors: true });
