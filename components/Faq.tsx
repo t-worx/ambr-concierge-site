@@ -4,7 +4,7 @@ import { useState } from "react";
 import { site } from "@/lib/site";
 
 const faqs = [
-  { q: "What happens when the concierge can’t answer something?", a: "It doesn’t guess. It collects the visitor’s details, hands the conversation to your team, and texts the owner so someone can follow up quickly. It can also offer to book a call." },
+  { q: "What happens when the concierge can’t answer something?", a: "It doesn’t guess. It collects the visitor’s details, hands the conversation to your team, and texts you so someone can follow up quickly. It can also offer to book a call." },
   { q: "Do I have to set anything up or manage it?", a: "No. This is a done-for-you service. We train the concierge on your business, install it, and keep tuning it. Your part is answering a few questions about how you work and approving the answers." },
   { q: "Will it work with my website?", a: "Yes. The concierge is a small widget added to your existing site. We handle the install, and there is no redesign or new platform to learn." },
   { q: "Is it chat or voice?", a: "Both. Visitors can type a question or tap to speak with the concierge by voice. Both use the same information about your business." },

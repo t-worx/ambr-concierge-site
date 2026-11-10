@@ -47,7 +47,7 @@ const steps: { label: string; title: string; body: string; mode: "chat" | "voice
     msgs: [
       { from: "them", text: "I need to talk to someone about a billing problem." },
       { from: "ai", text: "I'll get a team member on this now. What's the best number to reach you?" },
-      { from: "sys", text: "Handed to your team · Owner texted" },
+      { from: "sys", text: "Handed to your team · You get a text" },
     ],
   },
 ];

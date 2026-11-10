@@ -18,7 +18,7 @@ const events: Event[] = [
   { time: "10:05 AM", channel: "Call", quote: "What are your prices?", without: "Staff pulled off a job", lost: false, withAmbr: "Answered instantly" },
   { time: "12:40 PM", channel: "Call", quote: "Rings during the lunch rush", without: "Sent to voicemail", lost: true, withAmbr: "Voice AI picked up" },
   { time: "3:15 PM", channel: "Chat", quote: "Do you service my area?", without: "Replied 3 hours later", lost: false, withAmbr: "Answered instantly" },
-  { time: "6:48 PM", channel: "Chat", quote: "I need help with my order.", without: "No reply. Closed.", lost: true, withAmbr: "Handed off. Owner texted." },
+  { time: "6:48 PM", channel: "Chat", quote: "I need help with my order.", without: "No reply. Closed.", lost: true, withAmbr: "Handed off. You get a text." },
   { time: "9:47 PM", channel: "Call", quote: "Can I book for Saturday?", without: "Missed call", lost: true, withAmbr: "Booked Saturday 9 AM" },
 ];
 
