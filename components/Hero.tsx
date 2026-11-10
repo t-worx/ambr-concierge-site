@@ -121,7 +121,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="hero-cue absolute bottom-7 left-1/2 z-10 -translate-x-1/2 text-center motion-reduce:hidden" aria-hidden>
+      <div className="hero-cue hidden sm:block absolute bottom-7 left-1/2 z-10 -translate-x-1/2 text-center motion-reduce:hidden" aria-hidden>
         <span className="eyebrow !text-muted">Scroll</span>
         <span className="mx-auto mt-2 block h-9 w-px bg-gradient-to-b from-amber to-transparent" />
       </div>
