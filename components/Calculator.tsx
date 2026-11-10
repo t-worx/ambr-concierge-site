@@ -58,8 +58,7 @@ export default function Calculator() {
             </p>
             <p className="mt-3 font-mono text-lg tabular-nums text-amber">{fmt(yearly)} / year</p>
             <p className="mt-8 max-w-sm text-sm leading-relaxed text-muted">
-              This is a simple estimate based on the numbers you enter, not a promise of results.
-              On your demo we will work through it with your real call and chat volume.
+              This is an estimate based on your numbers, not a guarantee. We’ll run the real numbers with you on your demo.
             </p>
             <a href="#book" className="btn mt-8 self-start">Book a Free Demo</a>
           </div>

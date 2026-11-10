@@ -2,11 +2,11 @@ import { site } from "@/lib/site";
 
 const items = [
   { k: "Capture", title: "Stop losing the after-hours lead", body: "Evenings, weekends, lunch rushes, holidays. The concierge answers and books while the visitor is still on your site, before they try the next business on the list." },
-  { k: "Focus", title: "Give your team their day back", body: "Every repeat question the concierge handles is an interruption your staff never gets. They stay on the work that needs a person." },
+  { k: "Focus", title: "Give your team their day back", body: "The concierge answers the routine questions, so your staff can spend their time on the work that grows the business: serving customers, closing sales, and solving real problems." },
   { k: "Speed", title: "Answer in seconds, every time", body: "No hold, no contact form, no “we’ll get back to you.” Fast answers are often the difference between a booking and a bounce." },
   { k: "Consistency", title: "The right answer, the same way", body: "The concierge works from your approved information, so customers hear the same accurate answer whether it is Monday morning or Saturday night." },
   { k: "Cost", title: "Coverage without another hire", body: "Extend your front desk to nights and weekends without adding payroll, training, or scheduling for hours that are only sometimes busy." },
-  { k: "Safety net", title: "A human is always one step away", body: "When a conversation needs judgment, the concierge hands it to your team and texts the owner. You stay in control of the conversations that matter." },
+  { k: "Safety net", title: "A human is always one step away", body: "When a conversation needs judgment, the concierge hands it to your team and sends you a text. You stay in control of the conversations that matter." },
 ];
 
 export default function Benefits() {

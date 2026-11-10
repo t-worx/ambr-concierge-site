@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap, prefersReducedMotion } from "@/lib/motion";
 
 const steps = [
-  { n: "1", title: "Book a free demo", body: "We look at the questions your business gets, try the concierge together, and decide whether it is a fit. No pressure either way." },
+  { n: "1", title: "Book a free demo", body: "We set up a starter concierge using the information on your website so you can experience it answering questions about your business, by chat and by voice. You see what it can do before you commit to anything." },
   { n: "2", title: "We build it for you", body: "We train the concierge on your business, set up booking, handoff, and owner alerts, then add the widget to your website. You approve the answers before it goes live." },
   { n: "3", title: "We keep tuning it", body: "We review real conversations and keep improving the answers as your hours, services, and offers change. You never have to manage the AI." },
 ];

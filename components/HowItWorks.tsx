@@ -10,7 +10,7 @@ const steps: { label: string; title: string; body: string; mode: "chat" | "voice
   {
     label: "01 · Chat",
     title: "It answers the question right away.",
-    body: "The concierge is trained on your business: hours, services, pricing, policies, service area. Visitors get a clear answer in seconds instead of a contact form.",
+    body: "The concierge is trained on your business: hours, services, pricing, policies, service area, etc. Visitors get a clear answer in seconds instead of filling out a contact form and waiting for an answer.",
     mode: "chat",
     msgs: [
       { from: "them", text: "Are you open on Saturdays?" },
@@ -42,7 +42,7 @@ const steps: { label: string; title: string; body: string; mode: "chat" | "voice
   {
     label: "04 · Handoff",
     title: "It knows when to get a human.",
-    body: "Some conversations need a person. The concierge collects the details, hands the conversation to your team, and texts the owner so nothing sits unseen.",
+    body: "When a customer needs a real person, they get one. The concierge passes the conversation to your team and texts you, so you can step in while they’re still interested.",
     mode: "chat",
     msgs: [
       { from: "them", text: "I need to talk to someone about a billing problem." },

@@ -11,8 +11,7 @@ export default function Book() {
           The next question is coming. <span className="accent">Be there for it.</span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted" data-reveal>
-          Pick a time and we will show you the concierge answering questions about a business like
-          yours, by chat and by voice.
+          Pick a time and we’ll show you a starter concierge, built from your website, answering questions about your business by chat and by voice.
         </p>
 
         <div className="card mt-12 overflow-hidden text-left" data-reveal>
