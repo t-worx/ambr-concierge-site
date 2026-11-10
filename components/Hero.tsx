@@ -95,7 +95,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll scene: unanswered questions pile up */}
-      <div className="hero-scene invisible absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 px-5 motion-reduce:hidden sm:gap-4" aria-hidden>
+      <div className="hero-scene pointer-events-none invisible absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 px-5 motion-reduce:hidden sm:gap-4" aria-hidden>
         {notes.map((n, i) => (
           <div
             key={i}
