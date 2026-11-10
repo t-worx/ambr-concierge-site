@@ -19,9 +19,7 @@ export default function About() {
             <p className="mt-5 text-lg leading-relaxed text-muted">
               {site.name} is run by Tracy Wittenkeller, a digital architect and AI automation consultant who has
               spent more than eight years setting up the systems small businesses use to answer,
-              follow up with, and book their customers. Your concierge is configured by someone who
-              has done this work for gyms, service companies, and local businesses, and who stays
-              on to keep it sharp.
+              follow up with, and book their customers. So your concierge is configured by someone who has done this work for gyms, service companies, and other local businesses, and who manages it for you after it goes live.
             </p>
           </div>
         </div>

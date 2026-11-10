@@ -6,7 +6,7 @@ import { gsap, prefersReducedMotion } from "@/lib/motion";
 const steps = [
   { n: "1", title: "Book a free demo", body: "We set up a starter concierge using the information on your website so you can experience it answering questions about your business, by chat and by voice. You see what it can do before you commit to anything." },
   { n: "2", title: "We build it for you", body: "We train the concierge on your business and add it to your website, ready to answer questions, book appointments, and bring in your team when a customer needs a person. You approve the answers before it goes live." },
-  { n: "3", title: "We keep tuning it", body: "We review real conversations and keep improving the answers as your hours, services, and offers change. You never have to manage the AI." },
+  { n: "3", title: "We keep tuning it", body: "The concierge gets sharper the longer it runs. We keep it current as your business changes and refine its answers as it handles real questions. We manage it for you, so you never have to touch it." },
 ];
 
 export default function Process() {
